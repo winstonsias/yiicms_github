@@ -1,0 +1,28 @@
+缓存：
+1、配置文件缓存  DB_CONFIG_DATA
+2、分类文档模型缓存 DOCUMENT_MODEL_LIST
+3、hooks钩子缓存hooks(globals.php set_hook函数) 目前未启用
+
+
+未完成：
+删除分类逻辑（判断是否有文章）（已完成：20141126）
+合并分类（文章转移）（已完成：20141126）
+模型管理-》数据
+
+
+
+修复otbug
+文章自动保存不保存内容bug
+草稿箱没法恢复bug
+内容添加文章类型需要与栏目中设定的文章类型匹配bug
+更新属性中添加默认值缺少单引号 bug
+生成模型之后删除模型 会把表删除
+更新模型之后无刷新缓存DOCUMENT_MODEL_LIST造成分类选择绑定模型无法更新bug
+配置管理中批量删除无法使用bug
+导航管理中批量删除无法使用bug
+
+
+
+需要写入权限
+setManager.basePath "/var/www/yiicms/apps/admin/assets" 是无效的. 请确定它是一个可被 Web server process 写入资料的目录.
+需要服务器安装pdo_mysql
